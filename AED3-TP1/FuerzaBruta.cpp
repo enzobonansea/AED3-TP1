@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Helpers.h"
 #include "FuerzaBruta.h"
 
@@ -28,4 +29,6 @@ vector<vector<int> >& partes_de(vector<int>& A){
         for (int i = 0; i < con_primero.size(); ++i) con_primero[i].push_back(A[0]);
         res = concat(sin_primero, con_primero);
     }
+
+	return res;
 }

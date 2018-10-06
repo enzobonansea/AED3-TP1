@@ -1,10 +1,12 @@
 ﻿// AED3-TP1.cpp: define el punto de entrada de la aplicación de consola.
 //
 
+#include "stdafx.h"
 #include "Helpers.h"
 #include "FuerzaBruta.h"
 #include "Backtracking.h"
 #include "Dinamica.h"
+#include <ctime>
 
 unsigned t0, t1;
 double span;
@@ -31,7 +33,6 @@ int main() {
     t1 = clock();
     span = (double(t1-t0)/CLOCKS_PER_SEC) * 1000;
     cout << "Dinamica tardo: " << span << "ms" << endl;
-
 
     return 0;
 }

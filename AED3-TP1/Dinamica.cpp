@@ -1,10 +1,12 @@
+#include "stdafx.h"
 #include "Helpers.h"
 #include "Dinamica.h"
 
 int sumsetsum_din(vector<int>& B, int V) {
+	// Descarto los elementos mayores a V
     vector<int> A;
     for (int i = 0; i < B.size(); ++i) {
-        if (B[i] <= V) A.push_back(A[i]);
+        if (B[i] <= V) A.push_back(B[i]);
     }
 
     // Armo el vector solucion S de tamaño V+1, con todos los elementos iguales a -1

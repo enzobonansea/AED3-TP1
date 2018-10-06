@@ -147,11 +147,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Backtracking.h" />
+    <ClInclude Include="Dinamica.h" />
+    <ClInclude Include="FuerzaBruta.h" />
+    <ClInclude Include="Helpers.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AED3-TP1.cpp" />
+    <ClCompile Include="Backtracking.cpp" />
+    <ClCompile Include="Dinamica.cpp" />
+    <ClCompile Include="FuerzaBruta.cpp" />
+    <ClCompile Include="Helpers.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
