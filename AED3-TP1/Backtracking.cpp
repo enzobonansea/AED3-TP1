@@ -31,15 +31,17 @@ void desc_in_tree(vector<int>& A, int V){
         int m = A[0];
         int temp = current;
 
+		vector<int>* ptr_tail = tail(A);
         current++;
-        desc_in_tree(tail(A), V - m);
+        desc_in_tree(*ptr_tail, V - m);
         int m_included = current;
 
         current = temp;
-        desc_in_tree(tail(A), V);
+        desc_in_tree(*ptr_tail, V);
         int m_excluded = current;
 
         current = m_included <= m_excluded ? m_included : m_excluded;
+		delete ptr_tail;
     }
     else{
         current = infinity;

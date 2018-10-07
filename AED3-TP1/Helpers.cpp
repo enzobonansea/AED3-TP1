@@ -19,9 +19,9 @@ int min(vector<int>& v){
     return res;
 }
 
-vector<int>& tail(vector<int>& v){
-    vector<int> res;
-    for (int i = 1; i < v.size(); ++i) res.push_back(v[i]);
+vector<int>* tail(vector<int>& v){
+	vector<int>* res = new vector<int>();
+    for (int i = 1; i < v.size(); ++i) res->push_back(v[i]);
 
     return res;
 }
